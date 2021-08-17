@@ -3,7 +3,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:weight_tracker/model/weight_entry.dart';
 
 class UserLoadedAction {
-  final FirebaseUser firebaseUser;
+  final User firebaseUser;
   final List<WeightEntry> cachedEntries;
 
   UserLoadedAction(this.firebaseUser, {this.cachedEntries = const []});
